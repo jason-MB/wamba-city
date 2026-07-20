@@ -1,0 +1,365 @@
+:root{
+    --bg: #0d0d0f;
+--panel: #17171a;
+--text: #f5f5f5;
+--muted: #8a8a8f;
+--accent: #7c3aed;
+--logo:#5c02f7;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+    line-height: 1.5;
+}
+
+
+
+
+/*--header*/
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg);
+}
+header .logo {
+    font-size: 1.4rem;
+    letter-spacing: 0.01rem;
+}
+header .logo a{
+    text-decoration: none;
+    color: var(--logo);
+    font-family: sans-serif;
+}
+header .logo a:hover{
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    color: var(--bg);
+    font-weight: 700;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+nav a:hover {
+     color: var(--accent); 
+     text-decoration: underline;
+}
+
+
+/*hero*/
+
+.home {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background: url(font1.jpg);
+    background-size: cover;
+  }
+.home h1 {
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
+    font-weight: bold;
+    max-width: 20ch;
+    margin: 0 auto 1rem;
+}
+.home p {
+    color: #fff;
+    max-width: 45ch;
+    margin: 0 auto 2.75rem;
+    font-weight: 600;
+}
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.btn a{
+    text-decoration: none;
+    color: var(--logo);
+
+}
+.btn a:hover{
+    background-color: var(--accent);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--bg);
+}
+.home strong{
+    color: var(--bg);
+}
+
+.about{
+    padding: 3rem 1.5rem;
+
+}
+.about h1{
+    margin-bottom: 2.5rem;
+    color: var(--logo);
+    padding: 0 6rem;
+}
+.about .btn{
+    text-decoration: none;
+    margin: 0.5rem -1.9rem;
+}
+.about a{
+    text-decoration: none;
+    background-color: var(--accent);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--bg);
+}
+
+.address{
+    padding: 3rem 1.5rem;
+    background-color: #d8d8ea6b;
+}
+.address h2{
+    text-align: center;
+    color: var(--logo);
+}
+.address address{
+    text-align: center;
+    margin: 1rem 0;
+}
+.address address a{
+    text-decoration: none;
+    color: var(--panel);
+}
+.address address a:hover{
+    text-decoration: underline;
+    
+}
+
+.price {
+    max-width: 700px;
+    margin: 3rem auto;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.price table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.price caption {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--logo);
+}
+
+.price thead {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.price th,
+.price td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+.price tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+
+
+.price tbody tr:hover {
+    background-color: #f5f5fa;
+}
+
+
+.price tbody tr:last-child {
+    background-color: #fff8e6;
+    font-weight: 700;
+}
+
+.price tbody tr:last-child td:first-child::after {
+    content: " ⭐";
+}
+
+.contact{
+    padding: 3rem 1.5rem;
+
+}
+.contact h1{
+    color: var(--logo);
+    text-align: center;
+    margin: 1.5rem 0;
+}
+.contact p, .contact a{
+    text-align: center;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 90%;
+    box-sizing: border-box;
+
+}
+form label{
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--bg);
+}
+
+form input{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--panel);
+    border-radius: 0.5rem;
+}
+form input:focus {
+    outline: none;
+    border-color: #1a1a2e;
+    box-shadow: 0 0 0 3px rgba(26, 26, 46, 0.2);
+}
+form input::placeholder {
+    color: var(--muted);
+}
+form button{
+    padding: 0.6rem 2rem;
+    align-self: center;
+    margin: 0.8rem 0;
+    color: var(--bg);
+    cursor: pointer;
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment h1{
+    color: var(--logo);
+    text-align: center;
+}
+
+.comment article{
+    box-sizing: border-box;
+    border: 1px solid var(--bg);
+    max-width: 90%;
+    margin: 1rem;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #5c02f707;
+
+}
+.comment h3{
+    color: var(--logo);
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+
+.comment article p{
+    width: 100%;
+    text-align: center;
+}
+  
+  /*footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg);
+    color: var(--muted);
+    align-items: center;
+}
+
+
+
+/*media*/
+@media (min-width: 845px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+    }
+    header .logo{
+        margin-left: 1rem;
+    }
+  }
+@media (min-width: 768px) {
+    .home { padding: 5rem 3rem;
+    }
+    .home p{
+        max-width: 65ch;
+    }
+    .home a{
+        color: #010147;
+        background-color: rgba(0, 0, 255, 0.297);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        color: var(--bg);
+    }
+    .about p, .about a{
+        margin: 0 4rem;
+    }
+    .price {
+    max-width: 1000px;
+    margin: 3rem auto;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    form{
+        padding: 2rem 10rem;
+    }
+    form .group{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    form .group input{
+        margin-left: 2rem;
+    }
+    form .group label{
+        width: 2.5rem;
+    }
+    
+  } 
+@media (min-width: 1100px){
+    .comment-containt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+} 
+

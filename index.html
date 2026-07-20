@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wamba city</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <a href="#">Wamba City</a>
+        </div>
         <nav>
             <ul>
-                <li>Acceuil</li>
-                <li>A propos</li>
-                <li>Adresse</li>
-                <li>Nos tarifs</li>
-                <li>Nous Contacter</li>
-                <li>Commantaires</li>
+                <li><a href="">Acceuil</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Nos tarifs</a></li>
+                <li><a href="">Nous contacter</a></li>
+                <li><a href="">Adresse</a></li>
+                <li><a href="">Commentaires</a></li>
             </ul>
         </nav>
     </header>
@@ -24,21 +31,19 @@
             <p>Optez Pour le confort et la tranquilliter en vous installant à <strong>WAMBA CITY</strong></p>
             <div class="btn">
                 <a href="#">Nous Contacter</a>
+            </div>
+            <div class="btn">
                 <a href="#">En savoir Plus</a>
             </div>
         </section>
         <section class="about">
             <h1>A propos</h1>
             <p><strong>WAMBA CITY</strong> et une cité de 4 niveau de haut citué en face de la rue de la morgue de Dschang, prêt de l'hopital régional annexe de Dschang ébergent au rez-de-chaussée une pharmacie (Pharmacie du district de Dschang). Elle compte au total 45 chambres modernes contenant chacune 2 à 3pièces à l'intérieur en fonction du tarif. Elle offre une agréable vu d'ensemble et est proche des lieux importants notement l'hopital, l'université, des boutiques et bien d'autres. <br>Choisir <strong>WAMBA CITY</strong> signifie choisir le confort car notre édifice dispose d'électricité d'eau 24h/24 dont les frais vous sont épargnés. Egalement <strong>Wamba City</strong> dispose d'une connexion internet couvrant l'entièreté du batiment et offrant un débit de 50Mb/s </p>
-            <a href="#">En savoir Plus</a>
+            <div class="btn"></div>  
+                <a href="#">En savoir Plus</a>
+            </div>
         </section>
-        <section class="address">
-            <h2>Notre adresse</h2>
-            <address>
-                Face Hopital Régional Annexe de Dschang <br>
-                <a href="tel:+237600000000">6**********</a>
-            </address>
-        </section>
+        
         <section class="price">
             <table>
                 <caption>Nos tarifs</caption>
@@ -72,21 +77,32 @@
             <h1>Nous Contacter</h1>
             <p>Nous répondons à toutes vos préocupatios en moin de 24h</p>
             <form action="contacter" method="post">
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" placeholder="votre Nom" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Example: contact@gmail.com" required>
-                <label for="message">Message</label>
-                <input type="text" name="message" placeholder="votre message" required>
+                <div class="group">
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" placeholder="votre Nom" required>
+                </div>
+                <div class="group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Example: contact@gmail.com" required>
+                </div>
+                <div class="group">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" placeholder="votre message" required>
+                </div>
+                <button type="submit">Envoyer</button>
             </form>
-            <aside>
-                <p>Ou nous contacter directement</p>
-                <a href="email:wambacity@gmail.com">wambacity@gmail.com</a>
-                <a href="tel:+237600000000">+237 6********</a>
-            </aside>
+        </section>
+        <section class="address">
+            <h2>Notre adresse</h2>
+            <address>
+                Face Hopital Régional Annexe de Dschang <br><br>
+                <a href="tel:+237600000000">tél: +237 6**********</a><br>
+                <a href="email:wambacity@gmailco">Email: wambacity@gmailcom</a>
+            </address>
         </section>
         <section class="comment">
-            <h1>Commantaires</h1>
+            <h1>Commentaires</h1>
+            <div class="comment-containt">
             <article>
                 <h3>Ines</h3>
                 <p>Wamba city est une exélente cité car elle est proche du campus et c'est très pratique</p>
@@ -99,6 +115,7 @@
                 <h3>stéphane</h3>
                 <p>la connection à l'intérieur passe très bien et est pratique pour travailler d'intérieur</p>
             </article>
+            </div>
         </section>
     </main>
     <footer>
