@@ -58,6 +58,7 @@ nav a{
     text-decoration: none;
     color: var(--muted);
     font-size: 0.95rem;
+    transition: all 0.9s ease;
 }
 nav a:hover {
      color: var(--accent); 
@@ -96,7 +97,9 @@ nav a:hover {
 .btn a{
     text-decoration: none;
     color: var(--logo);
-
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.9s ease;
 }
 .btn a:hover{
     background-color: var(--accent);
@@ -127,8 +130,11 @@ nav a:hover {
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: var(--bg);
+    transition: background-color 0.9s ease;
 }
-
+.about a:hover{
+    background-color: #4646f0;
+}
 .address{
     padding: 3rem 1.5rem;
     background-color: #d8d8ea6b;
@@ -256,6 +262,11 @@ form button{
     border: 1px solid var(--accent);
     border-radius: 0.5rem;
     font-weight: 600;
+    transition: background-color 0.9s ease;
+    
+}
+form button:hover{
+    background-color: #4646f0;
 }
 .comment {
     display: flex;
@@ -278,6 +289,9 @@ form button{
     border-radius: 1rem;
     background-color: #5c02f707;
 
+}
+.comment article:hover{
+    background-color: #8a8a8f86;
 }
 .comment h3{
     color: var(--logo);
@@ -328,6 +342,7 @@ footer{
         padding: 0.5rem;
         border-radius: 0.5rem;
         color: var(--bg);
+        transition: background-color 0.9s ease;
     }
     .about p, .about a{
         margin: 0 4rem;
